@@ -1,0 +1,13 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Gegaware", "Ocean")
+
+if game.PlaceId == 6872265039 then
+    local Bedwars = Window:NewTab("Bedwars")
+    local BedwarsSection = Bedwars:NewSection("Bedwars")
+
+    BedwarsSection:NewButton("Killaura", "Kills for you", function()
+        local data = {
+            Killaura = false
+        }
+    end)
+end
